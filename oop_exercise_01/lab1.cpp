@@ -18,10 +18,10 @@ int main(){
   std::cout << "DIVIDE:\n";
   a.div(b).dwrite(std::cout);
   std::cout << "SIN:\n";
-  a.sin().dwrite(std::cout);
+  a.asin().dwrite(std::cout);
   std::cout << "COS: \n";
-  a.cos().dwrite(std::cout);
+  a.acos().dwrite(std::cout);
   std::cout << "TAN: \n";
-  a.tan().dwrite(std::cout);
+  a.atan().dwrite(std::cout);
   a.comp(b).cwrite(std::cout);
 }
