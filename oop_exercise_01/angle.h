@@ -1,19 +1,22 @@
 #ifndef D_ANGLE_H
 #define D_ANGLE_H
 
+#include <iostream>
+
 struct Angle{
+private:
   int angle;
   double dblVals;
-  char comp[];
 
+public:
   void read(std::istream& is);
   void awrite(std::ostream& os) const;
   void dwrite(std::ostream& os) const;
-  void cwrite(std::ostream& os) const;
+  int mntsonly();
 
   double deg_to_rad();
 
-  double to360();
+  int to360();
 
   Angle add(const Angle& rhs) const; // const в конце - нельзя изменять переменные именно этой структуры, на остальные (к примеру Angle result)  не влияет, если они сами не константы
   Angle sub(const Angle& rhs) const;
@@ -21,9 +24,9 @@ struct Angle{
 
   double asin();
   double acos();
-  dobule atan();
+  double atan();
 
-  Angle comp(const Angle& rhs) const;
-}
+  int comp(const Angle& rhs) const;
+};
 
 #endif
