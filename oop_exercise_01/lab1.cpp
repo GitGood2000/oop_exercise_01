@@ -5,7 +5,7 @@
 int main(){
   Angle a;
   Angle b;
-  std::cout << "Enter numbers:\n [degrees] and [minutes] (0-59)" << std::endl;
+  //std::cout << "Enter numbers:\n[degrees] and [minutes] (0-59)" << std::endl;
   a.read(std::cin);
   b.read(std::cin);
   std::cout << "RADS:\n";
