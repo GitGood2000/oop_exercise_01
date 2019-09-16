@@ -68,15 +68,15 @@ double Angle::div (const Angle& rhs) const {
 }
 
 double Angle::asin() {
-  return sin((double)deg + ((double)min / 60));
+  return sin(((double)deg + ((double)min / 60)) / 180 * M_PI);
 }
 
 double Angle::acos() {
-  return cos((double)deg + ((double)min / 60));
+  return cos(((double)deg + ((double)min / 60)) / 180 * M_PI);
 }
 
 double Angle::atan(){
-  return tan((double)deg + ((double)min / 60));
+  return tan(((double)deg + ((double)min / 60)) / 180 * M_PI);
 }
 
 int Angle::comp(const Angle& rhs) const {
